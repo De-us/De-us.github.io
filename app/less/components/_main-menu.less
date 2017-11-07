@@ -1,0 +1,188 @@
+.main-menu {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  padding: 20px 0;
+
+  .logo {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 82px;
+    margin: 0 32px 0 0;
+    top: 0;
+    left: 0;
+    background: url("../img/Logo_For_Home_Page2.svg");
+    background-size: 100%;
+  }
+
+  nav {
+    top: 34px;
+    position: relative;
+    float: left;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 5px;
+
+      a {
+        font-size: 17px;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 14px;
+        transition: 1s;
+
+        &:hover {
+          border-radius: 50px;
+          background: rgba(0,0,0, 0.3);
+        }
+
+      }
+    }
+  }
+
+  .select-location {
+    margin: 27px 0 0 0;
+    position: absolute;
+    right: 265px;
+  }
+
+  .login-btn {
+    position: absolute;
+    right: 15px;
+    top: 29px;
+    transition: 1s;
+
+    &:hover {
+      background: rgba(0,0,0, 0.3);
+      border: 1px solid rgba(0,0,0, 0.3);
+    }
+  }
+}
+
+// For mobile
+
+.open-menu {
+  width: 22px;
+  height: 14px;
+  position: absolute;
+  z-index: 20;
+  top: 8px;
+  left: 5%;
+  cursor: pointer;
+  background-image: url("../img/ico/MENU_ICON.svg");
+  display: none;
+}
+
+
+@media only screen and (min-width: 861px) and (max-width: 1279px) {
+  .main-menu {
+    .logo {
+      margin: 0 22px 0 0;
+    }
+
+    nav {
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+          font-size: 16px;
+          padding: 5px 8px;
+        }
+      }
+    }
+
+    .select-location {
+      position: absolute;
+      right: 200px;
+    }
+
+    .login-btn {
+      font-size: 15px;
+      padding: 8px 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 861px) and (max-width: 1080px) {
+  .main-menu {
+    .logo {
+      margin: 0 22px 0 0;
+    }
+
+    nav {
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+
+        a {
+          font-size: 15px;
+          padding: 5px 8px;
+        }
+      }
+    }
+
+    .select-location {
+      position: absolute;
+      right: 200px;
+    }
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .main-menu {
+    position: absolute;
+    z-index: 400;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+    .logo {
+      display: none;
+    }
+
+    nav {
+      top: 34px;
+      position: relative;
+      float: left;
+      display: none;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+
+        a {
+          font-size: 17px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .select-location {
+      position: absolute;
+      right: 5%;
+      margin: 5px 0 0 0;
+    }
+
+    .login-btn {
+      display: none;
+    }
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .main-menu_fixed {
+    position: fixed;
+    background-color: rgba(17,17,24,.83);
+    border-bottom: none;
+  }
+}

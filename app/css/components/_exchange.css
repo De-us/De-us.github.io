@@ -1,0 +1,111 @@
+.exchange {
+  background: #fff;
+  width: 37%;
+  padding: 42px 0 50px 5%;
+  height: 650px;
+  position: relative;
+  float: right;
+}
+.exchange__state {
+  position: absolute;
+  width: 92%;
+  min-width: 452px;
+  right: 0;
+  background: #fff;
+  opacity: 0;
+  z-index: 9;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: opacity 1s, -webkit-transform 2s;
+  transition: opacity 1s, -webkit-transform 2s;
+  -o-transition: opacity 1s, transform 2s;
+  transition: opacity 1s, transform 2s;
+  transition: opacity 1s, transform 2s, -webkit-transform 2s;
+}
+.exchange__item {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 29.44px 2.56px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 29.44px 2.56px rgba(0, 0, 0, 0.03);
+  width: 80%;
+  padding: 37px 10%;
+  position: relative;
+  margin: 0 0 15px 0;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  -o-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+.exchange__item .quantity span {
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 22px;
+  display: inline-block;
+}
+.exchange__item .quantity span i {
+  font-size: 13px;
+  font-weight: 400;
+  color: #b8b8b8;
+  font-style: normal;
+  display: block;
+}
+.exchange__item .quantity .active {
+  color: #fbcd20;
+}
+.exchange__item .quantity .ico_arrow {
+  width: 20px;
+  height: 20px;
+  background: url("../img/ico/arrows-ico.svg");
+  opacity: 0.3;
+  margin: 0 20px;
+  position: relative;
+  top: -20px;
+  display: inline-block;
+}
+.exchange__item .btn {
+  position: absolute;
+  right: 7%;
+  top: 37px;
+  padding: 15px 22px;
+}
+.exchange__item:hover {
+  -webkit-box-shadow: 0px 24px 28.48px 3.52px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 24px 28.48px 3.52px rgba(0, 0, 0, 0.04);
+}
+.exchange .exchange-active {
+  opacity: 1;
+  z-index: 10;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .exchange {
+    width: 100%;
+    padding: 22px 0 20px 0;
+    height: 650px;
+    position: relative;
+    float: none;
+  }
+  .exchange__state {
+    position: absolute;
+    width: 100%;
+    min-width: 100px;
+  }
+  .exchange__item {
+    width: 90%;
+    padding: 37px 5%;
+  }
+  .exchange__item .quantity .ico_arrow {
+    margin: 0 10px;
+    top: -14px;
+  }
+  .exchange__item .btn {
+    right: 5%;
+    top: 37px;
+    padding: 12px 12px;
+  }
+}

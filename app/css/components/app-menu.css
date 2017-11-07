@@ -1,0 +1,50 @@
+.app-menu-block {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.app-menu-block,
+.promo-page-multiple-block {
+  overflow: hidden;
+}
+.app-menu {
+  position: absolute;
+  z-index: 60;
+  top: 0;
+  left: -200px;
+  width: 230px;
+  height: 100%;
+  background-color: #292c34;
+}
+.app-menu-logo-block {
+  float: left;
+  width: 100%;
+}
+.app-menu-list {
+  float: left;
+  width: 100%;
+}
+.app-menu-section {
+  float: left;
+  width: 100%;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+@media (min-height: 481px) and (min-width: 0) {
+  .app-menu-section {
+    height: 38px;
+    line-height: 38px;
+  }
+}
