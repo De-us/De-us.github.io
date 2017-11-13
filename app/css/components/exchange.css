@@ -1,9 +1,0 @@
-.exchange__item {
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 29.44px 2.56px rgba(0, 0, 0, 0.03);
-          box-shadow: 0px 0px 29.44px 2.56px rgba(0, 0, 0, 0.03);
-  width: 430px;
-  height: 124px;
-}
