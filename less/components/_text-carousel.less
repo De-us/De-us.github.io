@@ -1,0 +1,73 @@
+.text-carousel {
+  z-index: 2;
+  position: relative;
+  padding: 10px 0 100px 0;
+
+  &__article {
+    color: #fff;
+    width: 90%;
+    margin: 0 2%;
+
+    strong {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.789;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.563;
+    }
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    padding-top: 15px;
+    .owl-dot {
+      width: 6px;
+      height: 6px;
+      border: 1px solid #fff;
+      display: inline-block;
+      border-radius: 50px;
+      margin: 0 20px 0 0;
+    }
+
+    .active{
+      background: #fff;
+    }
+  }
+}
+
+.unimproved .text-carousel {
+  &__article {
+    strong {
+      font-weight: 300;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .text-carousel {
+    padding: 30px 0 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+    &__article {
+      width: 90%;
+      margin: 0 auto;
+
+      strong {
+        font-size: 17px;
+        line-height: 1.289;
+      }
+
+    }
+  }
+}

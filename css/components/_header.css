@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #1b1b1b;
+  position: relative;
+  overflow: hidden;
+}
+.header__content {
+  position: relative;
+  z-index: 2;
+  width: 56%;
+  margin: 0 auto;
+  padding: 255px 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+.header__content h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 51px;
+  line-height: 1.51;
+}
+.header__content p {
+  font-size: 19px;
+  line-height: 1.789;
+  padding: 0 0 75px 0;
+}
+.header__content .help-message {
+  display: block;
+  width: 26%;
+  margin: 32px auto;
+  font-size: 12px;
+  line-height: 1.667;
+}
+.header__content .logo-mobile {
+  position: relative;
+  width: 160px;
+  height: 122px;
+  margin: 0 auto 40px auto;
+  top: 0;
+  left: 0;
+  background: url("../img/Logo_For_Home_Page2.svg") no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  display: none;
+}
+.header__bg {
+  width: 100%;
+  height: 100%;
+  background: top right url("../img/header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: .44;
+  -webkit-transform: scale(1.032);
+      -ms-transform: scale(1.032);
+          transform: scale(1.032);
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.unimproved .header__content h1 {
+  font-weight: 300;
+}
+.unimproved .header__content p {
+  font-weight: 300;
+}
+.unimproved .header__content .help-message {
+  font-weight: 300;
+}
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .header {
+    height: auto;
+    min-height: 200px;
+  }
+  .header__content {
+    width: 80%;
+    padding: 105px 0 0 0;
+  }
+  .header__content h1 {
+    font-size: 26px;
+  }
+  .header__content p {
+    font-size: 15px;
+    padding: 0 0 45px 0;
+  }
+  .header__content .help-message {
+    width: 70%;
+  }
+  .header__content .logo-mobile {
+    display: block;
+  }
+  .header__bg {
+    background-image: url("../img/header-bg_mobile.jpg");
+    background-position: top right;
+  }
+}

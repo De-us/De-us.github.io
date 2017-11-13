@@ -1,0 +1,165 @@
+.app-navbar-details-city-text {
+  color: #fff;
+  font-size: 12px;
+  border-bottom: 1px dotted #fff;
+}
+.app-navbar-details-tel-text {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.app-menu-block {
+  position: fixed;
+  z-index: 990;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@keyframes app-menu-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+}
+@-webkit-keyframes app-menu-animation {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+  }
+}
+.app-menu {
+  position: absolute;
+  z-index: 60;
+  top: 0;
+  left: -200px;
+  width: 230px;
+  height: 100%;
+  background-color: #292c34;
+}
+.app-menu-animation-active {
+  animation: app-menu-animation 0.4s forwards;
+  -webkit-animation: app-menu-animation 0.4s forwards;
+}
+.app-menu-logo-block {
+  float: left;
+  width: 100%;
+}
+.app-menu-logo-container {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.app-menu-logo {
+  width: 105px;
+  height: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/content/images/svg/SK_WHITE_MOBILE_LOGO.svg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: block;
+}
+.app-menu-list {
+  float: left;
+  width: 100%;
+}
+.app-menu-section {
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.app-menu-login-button,
+.app-menu-register-button {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+.app-menu-section.selected {
+  background-color: #625e5b;
+  color: #fff;
+}
+.app-menu-section.selected:hover {
+  color: #fff;
+}
+.app-menu-section:active {
+  background-color: none;
+  color: #625e5b;
+}
+.app-menu-auth {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 30px;
+  width: 100%;
+  float: left;
+}
+.app-menu-register {
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.app-menu-register-button {
+  border: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.36);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.app-menu-register-button:hover {
+  background-color: rgba(255, 255, 255, 0.46);
+}
+.app-menu-login {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.app-menu-login-button {
+  border: none;
+  color: #9b9b9b;
+  background-color: rgba(255, 255, 255, 0.13);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.app-menu-login-button:hover {
+  background-color: rgba(255, 255, 255, 0.23);
+  color: #fff;
+}
+.app-menu-block_show {
+  display: block;
+}
+.app-menu-block_show {
+  display: block;
+}
+.app-menu-block_show .app-menu {
+  left: -200px;
+}
+.unimproved .app-menu-block {
+  position: fixed;
+  z-index: 990;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}

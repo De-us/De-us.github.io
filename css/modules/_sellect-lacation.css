@@ -1,0 +1,61 @@
+.select-location {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  padding-left: 30px;
+  background: left 5px url("../img/location-fat_ffffff.svg") no-repeat;
+  -webkit-background-size: 20px 20px;
+          background-size: 20px;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.select-location span {
+  font-size: 18px;
+  color: #fff;
+  padding: 0 0 5px 0;
+  border-bottom: 1px #fff dotted;
+  display: block;
+}
+.select-location .phone {
+  margin-top: 5px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.select-location:hover {
+  opacity: 0.8;
+}
+@media only screen and (min-width: 861px) and (max-width: 1279px) {
+  .select-location span {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .select-location {
+    padding-left: 25px;
+    background-position: left -1px;
+  }
+  .select-location span {
+    font-size: 13px;
+    border-bottom: none;
+  }
+  .select-location .phone {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    right: 160px;
+    width: 130px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .select-location {
+    padding-left: 20px;
+  }
+  .select-location .phone {
+    top: 1px;
+    font-size: 13px;
+    right: 140px;
+  }
+}

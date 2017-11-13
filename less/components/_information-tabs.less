@@ -1,0 +1,189 @@
+.info-tabs {
+  width: 55%;
+  height: 100%;
+  background: #f8f9fc;
+  float: left;
+  position: relative;
+
+  &__tab {
+    z-index: 2;
+    width: 90%;
+    padding-top: 60px;
+    position: relative;
+
+    .partner-logo {
+      position: relative;
+      padding: 0 0 18px 0;
+    }
+
+    h2 {
+      font-size: 31px;
+      line-height: 1.252;
+      font-weight: 400;
+      padding: 10px 0 50px 0;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #4a4a4a;
+      line-height: 1.688;
+    }
+  }
+
+  .contacts {
+    padding-top: 40px;
+    p {
+      font-size: 21px;
+      color: #000;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 0 30px 0;
+
+      span {
+        display: block;
+        font-size: 14px;
+        margin: 0;
+        color: #b8b8b8;
+      }
+    }
+  }
+}
+
+.tab_help {
+  ul {
+    li {
+      list-style: none;
+      font-size: 16px;
+      color: #4a4a4a;
+      padding: 0 0 50px 60px;
+      line-height: 1.625;
+      width: 90%;
+      display: block;
+      position: relative;
+
+      span {
+        width: 40px;
+        height: 40px;
+        background: #fbcd20;
+        color: #000;
+        font-size: 21px;
+        margin-left: -60px;
+        position: absolute;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50px;
+      }
+
+    }
+  }
+}
+
+.block-bg_fix {
+  width: 700%;
+  height: 100%;
+  left: -600%;
+  top: 0;
+  display: block;
+  position: absolute;
+  background: #f8f9fc;
+  z-index: 1;
+}
+
+.unimproved .info-tabs {
+  &__tab {
+    h2 {
+      font-weight: 300;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+
+  .contacts {
+    p {
+      font-weight: 300;
+
+      span {
+      }
+    }
+  }
+}
+
+.unimproved .tab_help {
+  ul {
+    li {
+      font-weight: 200;
+      font-size: 20px;
+      span {
+
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1220px) {
+  .info-tabs {
+    width: 50%;
+
+    &__tab {
+      padding-top: 45px;
+    }
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .info-tabs {
+    width: 111%;
+    left: -5.5%;
+    height: auto;
+    float: none;
+
+    &__tab {
+      width: 90%;
+      padding: 30px 5%;
+      position: relative;
+      text-align: center;
+
+      .partner-logo {
+        padding: 0;
+        width: 80%;
+        max-width: 380px;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      h2 {
+        font-size: 26px;
+        padding: 0 0 10px 0;
+      }
+    }
+  }
+
+  .tab_help {
+    ul {
+      li {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+
+        span {
+          display: block;
+          margin: 0 auto 20px auto;
+          position: relative;
+        }
+
+      }
+    }
+  }
+
+  .block-bg_fix {
+   display: none;
+  }
+}
