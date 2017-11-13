@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,800&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,800&subset=cyrillic-ext');
 .promo-page_aeroflot {
   font-family: 'Roboto', sans-serif;
 }
@@ -204,13 +204,10 @@ ol {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*.inner-wrapper {
-  width: 100%;
-  max-width: 505px;
-}*/
 .page-container {
   background: #fff;
   width: 100%;
+  min-height: 100%;
   position: relative;
   height: auto;
 }
@@ -282,7 +279,7 @@ ol {
   transition: 1s;
 }
 .checkbox .state-1 {
-  left: -140px;
+  left: -148px;
 }
 .checkbox .state-2 {
   left: 100px;
@@ -319,13 +316,66 @@ ol {
 .state-2:hover {
   color: #fbcd20 !important;
 }
+.close-btn {
+  width: 50px;
+  padding-top: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.close-btn div {
+  width: 30px;
+  top: 20px;
+  left: 10px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.close-btn .x {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close-btn .y {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.close-btn span {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  -webkit-transition: all .9s;
+  -o-transition: all .9s;
+  transition: all .9s;
+}
+.close-btn:hover div {
+  background: #fbcd20;
+}
+.close-btn:hover .x {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.close-btn:hover .y {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close-btn:hover span {
+  color: #fbcd20;
+}
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .checkbox {
     margin: 0 20px;
     background-color: #FBCD20;
     -webkit-border-radius: 50px;
             border-radius: 50px;
-    width: 82px;
+    width: 71px;
     height: 37px;
     display: inline-block;
     position: relative;
@@ -353,10 +403,35 @@ ol {
     cursor: pointer;
   }
   .checkbox .state-1 {
-    left: -110px;
+    left: -112px;
   }
   .checkbox .state-2 {
-    left: 100px;
+    left: 80px;
+  }
+  .checkbox.checked:after {
+    left: 30px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .checkbox {
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    width: 60px;
+  }
+  .checkbox input {
+    display: none;
+  }
+  .checkbox label {
+    font-size: 15px;
+  }
+  .checkbox .state-1 {
+    left: -108px;
+  }
+  .checkbox .state-2 {
+    left: 70px;
+  }
+  .checkbox.checked:after {
+    left: 20px;
   }
 }
 .main-menu {
@@ -369,11 +444,11 @@ ol {
   position: relative;
   float: left;
   width: 120px;
-  height: 82px;
+  height: 120px;
   margin: 0 32px 0 0;
   top: 0;
   left: 0;
-  background: url("../img/Logo_For_Home_Page2.svg");
+  background: url("../img/Logo_For_Home_Page2.svg") no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100%;
 }
@@ -561,8 +636,18 @@ ol {
     position: absolute;
     top: 0;
     font-size: 15px;
-    right: 150px;
+    right: 160px;
     width: 130px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .select-location {
+    padding-left: 20px;
+  }
+  .select-location .phone {
+    top: 1px;
+    font-size: 13px;
+    right: 140px;
   }
 }
 .header {
@@ -629,6 +714,15 @@ ol {
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
+}
+.unimproved .header__content h1 {
+  font-weight: 300;
+}
+.unimproved .header__content p {
+  font-weight: 300;
+}
+.unimproved .header__content .help-message {
+  font-weight: 300;
 }
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .header {
@@ -907,13 +1001,21 @@ ol {
 .text-carousel .owl-dots .active {
   background: #fff;
 }
+.unimproved .text-carousel__article strong {
+  font-weight: 300;
+}
+.unimproved .text-carousel__article p {
+  font-weight: 300;
+}
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .text-carousel {
     padding: 30px 0 40px 0;
+    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
   .text-carousel__article {
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .text-carousel__article strong {
     font-size: 17px;
@@ -970,6 +1072,9 @@ ol {
 .nav-tabs_mobile {
   display: none;
 }
+.unimproved .info-tabs__nav .tab-trigger {
+  font-weight: 400;
+}
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .control-menu {
     width: 100%;
@@ -983,7 +1088,7 @@ ol {
     width: 100%;
   }
   .control-menu .exchange-control .checkbox-block {
-    width: 140px;
+    width: 128px;
     position: relative;
     right: auto;
     margin: 0 auto;
@@ -1011,6 +1116,14 @@ ol {
     display: block;
   }
 }
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .control-menu {
+    padding: 30px 0 7px;
+  }
+  .control-menu .exchange-control .checkbox-block {
+    width: 100px;
+  }
+}
 .exchange {
   background: #fff;
   width: 37%;
@@ -1030,11 +1143,9 @@ ol {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: opacity 1s, -webkit-transform 2s;
-  transition: opacity 1s, -webkit-transform 2s;
-  -o-transition: opacity 1s, transform 2s;
-  transition: opacity 1s, transform 2s;
-  transition: opacity 1s, transform 2s, -webkit-transform 2s;
+  -webkit-transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
+  -o-transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
+  transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
 }
 .exchange__item {
   -webkit-border-radius: 3px;
@@ -1057,10 +1168,13 @@ ol {
   font-weight: 500;
   line-height: 22px;
   display: inline-block;
+  text-align: start;
 }
 .exchange__item .quantity span i {
-  font-size: 13px;
+  font-size: 15px;
+  text-transform: lowercase;
   font-weight: 400;
+  padding-left: 1px;
   color: #b8b8b8;
   font-style: normal;
   display: block;
@@ -1069,14 +1183,20 @@ ol {
   color: #fbcd20;
 }
 .exchange__item .quantity .ico_arrow {
-  width: 20px;
-  height: 20px;
-  background: url("../img/ico/arrows-ico.svg");
-  opacity: 0.3;
-  margin: 0 20px;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  background: bottom center url("../img/ico/arrows-ico.svg") no-repeat;
+  -webkit-background-size: 98% 98%;
+          background-size: 98%;
+  opacity: 0.4;
+  margin: 0 18px;
   position: relative;
-  top: -20px;
+  top: -16px;
   display: inline-block;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 .exchange__item .btn {
   position: absolute;
@@ -1094,6 +1214,12 @@ ol {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+}
+.unimproved .exchange__item .quantity span {
+  font-weight: 300;
+}
+.unimproved .exchange__item .quantity span i {
+  font-weight: 300;
 }
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .exchange {
@@ -1122,9 +1248,33 @@ ol {
     padding: 12px 12px;
   }
 }
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .exchange__state {
+    position: absolute;
+    width: 100%;
+    min-width: 100px;
+  }
+  .exchange__item {
+    width: 90%;
+    padding: 37px 5%;
+  }
+  .exchange__item .quantity .ico_arrow {
+    margin: 0 5px;
+    top: -14px;
+  }
+  .exchange__item .quantity span {
+    font-size: 26px;
+  }
+  .exchange__item .btn {
+    right: 5%;
+    top: 37px;
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+}
 .info-tabs {
   width: 55%;
-  height: 740px;
+  height: 100%;
   background: #f8f9fc;
   float: left;
   position: relative;
@@ -1132,7 +1282,7 @@ ol {
 .info-tabs__tab {
   z-index: 2;
   width: 90%;
-  padding-top: 95px;
+  padding-top: 60px;
   position: relative;
 }
 .info-tabs__tab .partner-logo {
@@ -1143,34 +1293,52 @@ ol {
   font-size: 31px;
   line-height: 1.252;
   font-weight: 400;
-  padding: 0 0 15px 0;
+  padding: 10px 0 50px 0;
+  margin: 0;
 }
 .info-tabs__tab p {
   font-size: 16px;
   color: #4a4a4a;
   line-height: 1.688;
 }
+.info-tabs .contacts {
+  padding-top: 40px;
+}
+.info-tabs .contacts p {
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+.info-tabs .contacts p span {
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  color: #b8b8b8;
+}
 .tab_help ul li {
   list-style: none;
   font-size: 16px;
   color: #4a4a4a;
-  padding: 0 0 30px 50px;
+  padding: 0 0 50px 60px;
   line-height: 1.625;
   width: 90%;
+  display: block;
   position: relative;
 }
 .tab_help ul li span {
-  width: 30px;
-  height: 30px;
-  background: #fff;
+  width: 40px;
+  height: 40px;
+  background: #fbcd20;
   color: #000;
-  display: block;
-  margin-left: -50px;
+  font-size: 21px;
+  margin-left: -60px;
   position: absolute;
   text-align: center;
+  line-height: 38px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
-  vertical-align: middle;
 }
 .block-bg_fix {
   width: 700%;
@@ -1182,6 +1350,20 @@ ol {
   background: #f8f9fc;
   z-index: 1;
 }
+.unimproved .info-tabs__tab h2 {
+  font-weight: 300;
+}
+.unimproved .info-tabs__tab p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.unimproved .info-tabs .contacts p {
+  font-weight: 300;
+}
+.unimproved .tab_help ul li {
+  font-weight: 200;
+  font-size: 20px;
+}
 @media only screen and (min-width: 1023px) and (max-width: 1220px) {
   .info-tabs {
     width: 50%;
@@ -1192,8 +1374,8 @@ ol {
 }
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .info-tabs {
-    width: 110%;
-    left: -5%;
+    width: 111%;
+    left: -5.5%;
     height: auto;
     float: none;
   }
@@ -1217,8 +1399,9 @@ ol {
     padding: 0 0 10px 0;
   }
   .tab_help ul li {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 0 0 30px 0;
   }
   .tab_help ul li span {
     display: block;
@@ -1235,6 +1418,7 @@ footer {
   position: relative;
   background: #111118;
   padding: 70px 0 50px 0;
+  z-index: 1;
 }
 footer .logo {
   width: 200px;
@@ -1478,4 +1662,80 @@ footer .section .phone {
 }
 .app-menu-block_show .app-menu {
   left: -200px;
+}
+.unimproved .app-menu-block {
+  position: fixed;
+  z-index: 990;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.exchange-message {
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(45, 45, 45, 0.89);
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: opacity 0.7s cubic-bezier(0.6, 0, 0.4, 1), height 0.1s 1.2s cubic-bezier(0.6, 0, 0.4, 1);
+  -o-transition: opacity 0.7s cubic-bezier(0.6, 0, 0.4, 1), height 0.1s 1.2s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: opacity 0.7s cubic-bezier(0.6, 0, 0.4, 1), height 0.1s 1.2s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.exchange-message__content {
+  padding-top: 160px;
+}
+.exchange-message__content .close-btn {
+  display: inline-block;
+}
+.exchange-message__content strong {
+  display: block;
+  padding: 30px 0 0 0;
+  font-size: 51px;
+  font-weight: 400;
+}
+.exchange-message__content p {
+  font-size: 19px;
+  width: 40%;
+  line-height: 1.8;
+  position: relative;
+  margin: 20px auto 80px auto;
+}
+.exchange-message_show {
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1), height 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+  -o-transition: opacity 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1), height 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: opacity 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1), height 1s 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.bg-blur {
+  webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  -webkit-transition: all 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  -o-transition: all 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+  transition: all 0.7s cubic-bezier(0.6, 0, 0.4, 1);
+}
+@media only screen and (min-width: 100px) and (max-width: 1023px) {
+  .exchange-message__content {
+    padding-top: 110px;
+  }
+  .exchange-message__content strong {
+    font-size: 31px;
+  }
+  .exchange-message__content p {
+    font-size: 15px;
+    width: 80%;
+    margin: 20px auto 80px auto;
+  }
 }

@@ -3,20 +3,29 @@
  * Tabs
  */
 
- $("document").ready(function(){
-  $(".info-tabs__tab").hide();
-  $(".info-tabs__tab:first").show();
+$(function(){
+    var controlId = '.tabs-control li',
+        tabId     = '.info-tabs__tab';
+
+    $(tabId).hide();
+    $(tabId+':first').show();
+
+    $(controlId).click(function() {
+        var activeTab = $(this).attr('rel');
+
+        $(tabId).hide();
+        $('#' + activeTab).fadeIn();
+
+        $(controlId).removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
- $(".tabs-control li").click(function() {
-  $(".info-tabs__tab").hide();
-  var activeTab = $(this).attr("rel");
-  $("#"+activeTab).fadeIn();
-	if($(this).attr("rel") == "tab-2"){
-		$('.tab-slider--tabs').addClass('slide');
-	}else{
-		$('.tab-slider--tabs').removeClass('slide');
-	}
-  $(".tabs-control li").removeClass("active");
-  $(this).addClass("active");
+// Background fix
+$(function(){
+    $('.block-bg_fix').css('min-height', $(window).height() + 'px');
+
+    $(window).resize(function(){
+        $('.block-bg_fix').css('min-height', $(window).height() + 'px');
+    })
 });

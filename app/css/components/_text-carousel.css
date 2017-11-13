@@ -35,13 +35,21 @@
 .text-carousel .owl-dots .active {
   background: #fff;
 }
+.unimproved .text-carousel__article strong {
+  font-weight: 300;
+}
+.unimproved .text-carousel__article p {
+  font-weight: 300;
+}
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .text-carousel {
     padding: 30px 0 40px 0;
+    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
   .text-carousel__article {
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .text-carousel__article strong {
     font-size: 17px;

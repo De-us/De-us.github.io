@@ -45,7 +45,17 @@
     position: absolute;
     top: 0;
     font-size: 15px;
-    right: 150px;
+    right: 160px;
     width: 130px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .select-location {
+    padding-left: 20px;
+  }
+  .select-location .phone {
+    top: 1px;
+    font-size: 13px;
+    right: 140px;
   }
 }

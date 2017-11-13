@@ -5,13 +5,10 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-/*.inner-wrapper {
-  width: 100%;
-  max-width: 505px;
-}*/
 .page-container {
   background: #fff;
   width: 100%;
+  min-height: 100%;
   position: relative;
   height: auto;
 }

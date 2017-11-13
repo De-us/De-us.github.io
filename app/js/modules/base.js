@@ -5,6 +5,10 @@
 $(function(){
     $('.text-carousel').owlCarousel({
         responsiveClass:true,
+        loop: 1,
+        autoplay: 1,
+        autoplayTimeout: 3000,
+
         responsive:{
             0:{
                 items:1,

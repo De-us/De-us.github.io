@@ -17,11 +17,9 @@
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: opacity 1s, -webkit-transform 2s;
-  transition: opacity 1s, -webkit-transform 2s;
-  -o-transition: opacity 1s, transform 2s;
-  transition: opacity 1s, transform 2s;
-  transition: opacity 1s, transform 2s, -webkit-transform 2s;
+  -webkit-transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
+  -o-transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
+  transition: all 0.9s cubic-bezier(0.6, 0, 0.4, 1), opacity 1s;
 }
 .exchange__item {
   -webkit-border-radius: 3px;
@@ -44,10 +42,13 @@
   font-weight: 500;
   line-height: 22px;
   display: inline-block;
+  text-align: start;
 }
 .exchange__item .quantity span i {
-  font-size: 13px;
+  font-size: 15px;
+  text-transform: lowercase;
   font-weight: 400;
+  padding-left: 1px;
   color: #b8b8b8;
   font-style: normal;
   display: block;
@@ -56,14 +57,20 @@
   color: #fbcd20;
 }
 .exchange__item .quantity .ico_arrow {
-  width: 20px;
-  height: 20px;
-  background: url("../img/ico/arrows-ico.svg");
-  opacity: 0.3;
-  margin: 0 20px;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  background: bottom center url("../img/ico/arrows-ico.svg") no-repeat;
+  -webkit-background-size: 98% 98%;
+          background-size: 98%;
+  opacity: 0.4;
+  margin: 0 18px;
   position: relative;
-  top: -20px;
+  top: -16px;
   display: inline-block;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 .exchange__item .btn {
   position: absolute;
@@ -81,6 +88,12 @@
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+}
+.unimproved .exchange__item .quantity span {
+  font-weight: 300;
+}
+.unimproved .exchange__item .quantity span i {
+  font-weight: 300;
 }
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .exchange {
@@ -107,5 +120,29 @@
     right: 5%;
     top: 37px;
     padding: 12px 12px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+  .exchange__state {
+    position: absolute;
+    width: 100%;
+    min-width: 100px;
+  }
+  .exchange__item {
+    width: 90%;
+    padding: 37px 5%;
+  }
+  .exchange__item .quantity .ico_arrow {
+    margin: 0 5px;
+    top: -14px;
+  }
+  .exchange__item .quantity span {
+    font-size: 26px;
+  }
+  .exchange__item .btn {
+    right: 5%;
+    top: 37px;
+    font-size: 14px;
+    padding: 12px 10px;
   }
 }

@@ -63,6 +63,15 @@
   -o-transition: 0.1s;
   transition: 0.1s;
 }
+.unimproved .header__content h1 {
+  font-weight: 300;
+}
+.unimproved .header__content p {
+  font-weight: 300;
+}
+.unimproved .header__content .help-message {
+  font-weight: 300;
+}
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .header {
     height: auto;

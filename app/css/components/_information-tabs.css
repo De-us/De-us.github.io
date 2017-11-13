@@ -1,6 +1,6 @@
 .info-tabs {
   width: 55%;
-  height: 740px;
+  height: 100%;
   background: #f8f9fc;
   float: left;
   position: relative;
@@ -8,7 +8,7 @@
 .info-tabs__tab {
   z-index: 2;
   width: 90%;
-  padding-top: 95px;
+  padding-top: 60px;
   position: relative;
 }
 .info-tabs__tab .partner-logo {
@@ -19,34 +19,52 @@
   font-size: 31px;
   line-height: 1.252;
   font-weight: 400;
-  padding: 0 0 15px 0;
+  padding: 10px 0 50px 0;
+  margin: 0;
 }
 .info-tabs__tab p {
   font-size: 16px;
   color: #4a4a4a;
   line-height: 1.688;
 }
+.info-tabs .contacts {
+  padding-top: 40px;
+}
+.info-tabs .contacts p {
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+.info-tabs .contacts p span {
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  color: #b8b8b8;
+}
 .tab_help ul li {
   list-style: none;
   font-size: 16px;
   color: #4a4a4a;
-  padding: 0 0 30px 50px;
+  padding: 0 0 50px 60px;
   line-height: 1.625;
   width: 90%;
+  display: block;
   position: relative;
 }
 .tab_help ul li span {
-  width: 30px;
-  height: 30px;
-  background: #fff;
+  width: 40px;
+  height: 40px;
+  background: #fbcd20;
   color: #000;
-  display: block;
-  margin-left: -50px;
+  font-size: 21px;
+  margin-left: -60px;
   position: absolute;
   text-align: center;
+  line-height: 38px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
-  vertical-align: middle;
 }
 .block-bg_fix {
   width: 700%;
@@ -58,6 +76,20 @@
   background: #f8f9fc;
   z-index: 1;
 }
+.unimproved .info-tabs__tab h2 {
+  font-weight: 300;
+}
+.unimproved .info-tabs__tab p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.unimproved .info-tabs .contacts p {
+  font-weight: 300;
+}
+.unimproved .tab_help ul li {
+  font-weight: 200;
+  font-size: 20px;
+}
 @media only screen and (min-width: 1023px) and (max-width: 1220px) {
   .info-tabs {
     width: 50%;
@@ -68,8 +100,8 @@
 }
 @media only screen and (min-width: 100px) and (max-width: 1023px) {
   .info-tabs {
-    width: 110%;
-    left: -5%;
+    width: 111%;
+    left: -5.5%;
     height: auto;
     float: none;
   }
@@ -93,8 +125,9 @@
     padding: 0 0 10px 0;
   }
   .tab_help ul li {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 0 0 30px 0;
   }
   .tab_help ul li span {
     display: block;
